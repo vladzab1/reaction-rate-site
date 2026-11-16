@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Залежність швидкості реакцій від різних чинників</title>
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      line-height: 1.6;
+      color: #222;
+      background: #eef3f8;
+    }
+    header {
+      background: #1f5f99;
+      color: #fff;
+      text-align: center;
+      padding: 40px 20px;
+    }
+    header h1 { margin: 0 0 10px; font-size: 2rem; }
+    header p { margin: 0; font-size: 1.1rem; opacity: 0.9; }
+    main { max-width: 1000px; margin: 0 auto; padding: 20px; }
+    section {
+      background: #fff;
+      border-radius: 10px;
+      padding: 20px 24px;
+      margin-bottom: 20px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+    h2 { margin-top: 0; color: #1f5f99; border-bottom: 2px solid #1f5f99; padding-bottom: 6px; }
+    .formula {
+      background: #fff4d6;
+      border-left: 5px solid #f0a500;
+      padding: 10px 16px;
+      margin: 12px 0;
+      font-size: 1.15rem;
+      font-weight: bold;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 16px;
+    }
+    .card {
+      background: #f5f9fd;
+      border: 1px solid #c8d9ea;
+      border-radius: 8px;
+      padding: 14px 16px;
+    }
+    .card h3 { margin: 0 0 8px; color: #174a78; }
+    .card .num {
+      display: inline-block;
+      background: #1f5f99;
+      color: #fff;
+      width: 28px; height: 28px;
+      line-height: 28px;
+      text-align: center;
+      border-radius: 50%;
+      margin-right: 6px;
+    }
+    table { width: 100%; border-collapse: collapse; margin-top: 10px; }
+    th, td { border: 1px solid #b7c9dc; padding: 8px 10px; text-align: left; }
+    th { background: #dbe8f5; }
+    ul { margin: 6px 0; padding-left: 22px; }
+    footer { text-align: center; padding: 20px; color: #555; font-size: 0.9rem; }
+    @media (max-width: 600px) { header h1 { font-size: 1.5rem; } }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Залежність швидкості реакцій від різних чинників</h1>
+  <p>Хімічна кінетика: від чого залежить, як швидко відбувається реакція</p>
+</header>
+
+<main>
+
+  <section>
+    <h2>Що таке швидкість хімічної реакції?</h2>
+    <p>
+      <b>Швидкість хімічної реакції</b> — це зміна концентрації реагенту або
+      продукту за одиницю часу.
+    </p>
+    <div class="formula">v = ± Δc / Δt &nbsp;&nbsp; [моль/(л·с)]</div>
+    <p>
+      Знак «−» ставлять, якщо рахують за речовиною, що витрачається, а «+» — за
+      речовиною, що утворюється. Щоб відбулася реакція, частинки мають зіткнутися
+      з достатньою енергією. Чим більше таких зіткнень — тим вища швидкість.
+    </p>
+  </section>
+
+  <section>
+    <h2>Основні чинники</h2>
+    <div class="grid">
+
+      <div class="card">
+        <h3><span class="num">1</span>Природа речовин</h3>
+        <p>Різні речовини реагують з різною швидкістю.</p>
+        <ul>
+          <li>Натрій з водою реагує бурхливо, залізо — дуже повільно.</li>
+          <li>Іонні реакції в розчинах відбуваються майже миттєво.</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h3><span class="num">2</span>Концентрація</h3>
+        <p>Більша концентрація — більше зіткнень частинок — вища швидкість.</p>
+        <ul>
+          <li>Сірка горить у чистому кисні набагато яскравіше, ніж на повітрі.</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h3><span class="num">3</span>Температура</h3>
+        <p>Чим вища температура, тим швидше рухаються частинки й тим більше з них мають достатню енергію.</p>
+        <ul>
+          <li>Їжа в холодильнику псується повільніше.</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h3><span class="num">4</span>Площа поверхні</h3>
+        <p>Для твердих речовин: чим дрібніше подрібнена речовина, тим більша поверхня контакту.</p>
+        <ul>
+          <li>Порошок цинку реагує з кислотою швидше, ніж гранула.</li>
+          <li>Борошняний пил може вибухати.</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h3><span class="num">5</span>Тиск</h3>
+        <p>Для газів: підвищення тиску збільшує концентрацію, а отже й швидкість. На реакції рідин і твердих тіл тиск майже не впливає.</p>
+      </div>
+
+      <div class="card">
+        <h3><span class="num">6</span>Каталізатори та інгібітори</h3>
+        <p><b>Каталізатор</b> прискорює реакцію, але сам не витрачається. <b>Інгібітор</b> її сповільнює.</p>
+        <ul>
+          <li>MnO₂ прискорює розклад H₂O₂.</li>
+          <li>Ферменти — біологічні каталізатори.</li>
+        </ul>
+      </div>
+
+    </div>
+  </section>
+
+  <section>
+    <h2>Закони та правила</h2>
+
+    <h3>Закон діючих мас</h3>
+    <p>Для реакції aA + bB → продукти швидкість пропорційна добутку концентрацій реагентів:</p>
+    <div class="formula">v = k · [A]<sup>a</sup> · [B]<sup>b</sup></div>
+    <p>де <b>k</b> — константа швидкості (залежить від природи речовин і температури).</p>
+
+    <h3>Правило Вант-Гоффа</h3>
+    <p>При підвищенні температури на 10 °C швидкість більшості реакцій зростає в 2–4 рази:</p>
+    <div class="formula">v₂ / v₁ = γ<sup>(t₂ − t₁) / 10</sup> &nbsp;, де γ = 2…4</div>
+    <p><i>Приклад:</i> γ = 2, температура зросла з 20 °C до 50 °C. Зміна — 30 °C, тобто 3 «кроки» по 10 °C. Швидкість зросте в 2³ = <b>8 разів</b>.</p>
+  </section>
+
+  <section>
+    <h2>Підсумкова таблиця</h2>
+    <table>
+      <tr>
+        <th>Чинник</th>
+        <th>Зміна</th>
+        <th>Вплив на швидкість</th>
+      </tr>
+      <tr><td>Концентрація</td><td>збільшуємо</td><td>зростає</td></tr>
+      <tr><td>Температура</td><td>підвищуємо</td><td>зростає</td></tr>
+      <tr><td>Площа поверхні (тверді речовини)</td><td>подрібнюємо</td><td>зростає</td></tr>
+      <tr><td>Тиск (гази)</td><td>підвищуємо</td><td>зростає</td></tr>
+      <tr><td>Каталізатор</td><td>додаємо</td><td>зростає</td></tr>
+      <tr><td>Інгібітор</td><td>додаємо</td><td>зменшується</td></tr>
+    </table>
+  </section>
+
+  <section>
+    <h2>Прості досліди</h2>
+    <ul>
+      <li><b>Шипучa таблетка у воді:</b> у гарячій воді розчиняється швидше, ніж у холодній (температура).</li>
+      <li><b>Цукор:</b> подрібнений цукор розчиняється швидше, ніж шматочок рафінаду (площа поверхні).</li>
+      <li><b>Оцет + сода:</b> з більш концентрованим оцтом реакція бурхливіша (концентрація).</li>
+    </ul>
+  </section>
+
+</main>
+
+<footer>
+  Постер на тему «Залежність швидкості реакцій від різних чинників» by vladyslav zabolotnii
+</footer>
+
+</body>
+</html>
